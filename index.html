@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Head -->
+    <head>
+
+        <link rel="icon" href="img/icon.jpg">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+
+        <title>CURE</title>
+
+        <!-- Bootstrap Core CSS : For some reason it is not possible to reference a bootstrap css file by URL -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+        <!-- Theme CSS -->
+        <link href="css/grayscale.css" rel="stylesheet">
+
+    </head> <!-- /.Head -->
+
+    <!-- Body -->
+    <body id="home" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top">
+            <div class="container">
+
+	              <!-- Navigation bar -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="https://www.cemef.mines-paristech.fr/presentation/equipe-cfl/">
+                        <i class="fa"></i> <span class="light">CFL team</span>
+                    </a>
+                </div> <!-- /.Navigation bar -->
+
+                <!-- Navigation links -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+	                      <li>
+                            <a class="page-scroll" href="#home">Home</a>
+	                      </li>
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#portfolio">Gallery</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#positions">Positions</a>
+                        </li>
+                    </ul>
+                </div> <!-- /.Navigation links -->
+
+            </div>
+        </nav> <!-- /.Navigation -->
+
+        <!-- Intro Header -->
+        <header class="intro">
+            <div class="intro-body">
+                <div class="container">
+                    <div class="introvidcontainer">
+                        <video autoplay muted loop>
+                            <source class='introvid' src="imgs/cure1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <img class="LOGO" src="imgs/CURE_LOGO.png">
+                    </div>
+                </div>
+            </div>
+        </header> <!-- /.Intro Header -->
+
+        <!-- About Section -->
+        <section id="about" class="text-center">
+            <div class="about-section">
+                <div class="container">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1>About CURE</h1>
+                        <p>CURE is an ERC-granted project aiming at enriching numerical simulations of intracranial aneurysms towards high-fidelity rupture risk assessment and patient-specific treatment.
+                            The project is hosted in the <a href="https://www.cemef.mines-paristech.fr/presentation/equipe-cfl/">CFL</a> team at the Mines ParisTech <a href="https://www.cemef.mines-paristech.fr/">CEMEF</a> research center.
+                            It started in January 2023 for a total duration of 5 years.
+                        </p>
+                    </div>
+
+                    <h3>Development Team</h3>
+                    <div class="about-thumb">
+                        <img src="avatars/P-Jeken.jpeg" alt="Jeken">
+                        <div class="about-des">
+                            <h3>Pablo Jeken-Rico</h3>
+                            <h4>PhD Student</h4>
+                            <ul class="social-icon">
+                                <li><a href="https://www.linkedin.com/in/pablo-jeken-rico-11b121151/" class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-thumb">
+                        <img src="avatars/E-Hachem.jpeg" alt="Hachem">
+                        <div class="about-des">
+                            <h3>Elie Hachem</h3>
+                            <h4>Professor</h4>
+                            <ul class="social-icon">
+                                <li><a href="https://fr.linkedin.com/in/ehachem/" class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-thumb">
+                        <img src="avatars/A-Goetz.png" alt="Goetz">
+                        <div class="about-des">
+                            <h3>Aurèle Goetz</h3>
+                            <h4>PhD Student</h4>
+                            <ul class="social-icon">
+                                <li><a href="https://www.linkedin.com/in/aurelegoetz/" class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="portfolio" class="container-fluid text-center">
+            <div class="container">
+
+	              <!-- Title -->
+                <h1>Recent research directions</h1>
+
+	              <!-- Gallery elements -->
+
+                <!-- Column 1 -->
+                <div class="col-sm-4">
+
+                    <!-- Img -->
+                    <div class="project-wrap">
+                        <a data-toggle="modal" href="pages/stent/stent.html" data-target="#myModal">
+                            <img src="imgs/stent.png" alt=""/>
+                            <span class="top">Improving treatment</span>
+                            <span class="bottom">Deep reinforcement learning for optimal flow-diverter design</span>
+                        </a>
+                    </div>
+	                  <div class="modal fade" id="myModal">
+	                      <div class="modal-dialog">
+		                        <div class="modal-content">
+		                        </div>
+	                      </div>
+	                  </div> <!-- /.Img -->
+
+                </div> <!-- /.Column 1 -->
+
+                <!-- Column 2 -->
+                <div class="col-sm-4">
+
+                    <!-- Img -->
+                    <div class="project-wrap">
+                        <a data-toggle="modal" href="pages/cow/cow.html" data-target="#myModal">
+                            <img src="imgs/cow.png" alt=""/>
+                            <span class="top">Capturing brain haemodynamics at a larger scale</span>
+                            <span class="bottom">Impact assessment of the simulated domain extension in brain aneurysm CFD simulations</span>
+                        </a>
+                    </div>
+	                  <div class="modal fade" id="myModal">
+	                      <div class="modal-dialog">
+		                        <div class="modal-content">
+		                        </div>
+	                      </div>
+	                  </div> <!-- /.Img -->
+
+                </div> <!-- /.Column 2 -->
+
+                <!-- Column 3 -->
+                <div class="col-sm-4">
+
+                    <!-- Img -->
+                    <div class="project-wrap">
+	                      <a data-toggle="modal" href="pages/AnXplore/AnXplore.html" data-target="#myModal">
+                            <img src="imgs/AnXplore2.png" alt=""/>  <!-- ratio is 0.7871 for the images -->
+                            <span class="top">Sharing new datasets</span>
+                            <span class="bottom">Fluid-structure interaction modelling relevance investigated in 101 aneurysm cases</span>
+                        </a>
+                    </div>
+	                  <div class="modal fade" id="myModal">
+	                      <div class="modal-dialog">
+		                        <div class="modal-content">
+		                        </div>
+	                      </div>
+	                  </div> <!-- /.Img -->
+
+
+                </div> <!-- /.Column 3 -->
+
+            </div> <!-- /.Gallery elements -->
+
+        </section> <!-- /.Gallery Section -->
+
+        <!-- Positions Section -->
+        <section id="positions" class="text-center">
+            <div class="positions-section">
+                <div class="container">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1>Open positions</h1>
+                        <!-- <p>There are no open positions currently. You can still submit an unsolicited application to <a href="mailto:elie.hachem@minesparis.psl.eu">elie.hachem@minesparis.psl.eu</a></p> -->
+                        <p> We are currently looking for 2 master students to work on exciting projects as part of CURE.
+                            Please consult the following links:
+                            <br>
+                            <a href="pdfs/pos1.pdf" target="_blank"> Software Engineer in Biomechanics </a>
+                            <br>
+                            <a href="pdfs/pos2.pdf" target="_blank"> Simulating brain hemodynamic recovery after cardiac arrest </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- /.Download Section -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+                <p>Copyright &copy; CURE 2023</p>
+            </div>
+        </footer> <!-- /.Footer -->
+
+        <!-- jQuery -->
+        <script src="vendor/jquery/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+        <!-- Theme JavaScript -->
+        <script src="js/grayscale.js"></script>
+
+        <!-- Modal reload script -->
+        <script>
+         $(document).on('hidden.bs.modal', function (e) {
+             var target = $(e.target);
+             target.removeData('bs.modal')
+                   .find(".clearable-content").html('');
+         });
+        </script>
+
+    </body> <!-- /.Body -->
+
+</html>

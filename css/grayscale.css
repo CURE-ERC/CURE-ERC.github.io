@@ -1,0 +1,624 @@
+/**********************/
+/***** Main stuff *****/
+/**********************/
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/*************************/
+/***** Titles styles *****/
+/*************************/
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/*******************************/
+/***** Main paragrah style *****/
+/*******************************/
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/***************************/
+/******* Link styles *******/
+/***************************/
+
+a {
+    color: #00699b;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #1d9b6c;
+}
+
+/************************/
+/***** Navbar stuff *****/
+/************************/
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(103,119,137,.7);
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    background-color: black;
+}
+
+.navbar-custom .navbar-toggle {
+    color: white;
+    background-color: rgba(103,119,137,.7);
+    font-size: 12px;
+}
+
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
+    outline: none;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: none;
+}
+
+.navbar-custom a {
+    color: white;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    color: rgba(103,119,137,.7);
+               outline: none;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: none;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: none;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(103,119,137,.7)
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .navbar-custom {
+	      padding: 20px 0;
+	      border-bottom: none;
+	      letter-spacing: 1px;
+	      background: transparent;
+	      -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+	      -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+	      transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    }
+    .navbar-custom.top-nav-collapse {
+	      padding: 0;
+	      background: black;
+	      border-bottom: 1px solid rgba(103,119,137,.7)
+    }
+}
+
+.light {
+    font-weight: 400;
+}
+
+/***********************/
+/***** Intro style *****/
+/***********************/
+
+.intro {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background: url(../img/intro.png) no-repeat center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* .introvidcontainer {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .introvid {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .LOGO {
+    height: 180px;
+    position: relative;
+    top: -200px;
+    right: 100px;
+
+  } */
+
+  /* Create a container to hold both the video and the overlay image */
+.introvidcontainer {
+    position: relative;
+    height: auto; /* Adjust height as needed */ 
+    left: 10%;   
+  }
+  
+  /* Style for the video element */
+  .introvidcontainer video {
+    width: 80%;
+    height: auto;
+  }
+  
+  /* Style for the overlay image */
+  .LOGO {
+    position: absolute;
+    top: 11%;
+    left: 0%;
+    width: 34%;
+    /* You can add more styling here (e.g., background-color, border, etc.) */
+  }
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 150px;
+    letter-spacing: 25px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 26px;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        height: 100%;
+        -webkit-background-size: 170%;
+        -moz-background-size: 170%;
+        background-size: 170%;
+        -o-background-size: 170%;
+    }
+    .intro .intro-body .brand-heading {
+	      font-size: 40px;
+    }
+    .intro .intro-body .intro-text {
+	      font-size: 15px;
+    }
+    .intro h1 {
+        margin: 0 0 10px;
+    }
+    .intro p {
+        margin: 0 0 0px;
+    }
+}
+
+/***********************************************/
+/***** Special style for the about section *****/
+/***********************************************/
+
+.about-section {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: black;
+    background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.about-thumb {
+    height: 300px;
+    width: 300px;
+    margin: 30px 30px 60px 30px;
+    position: relative;
+    display: inline-block;
+    box-shadow: 3px 3px 5px rgba(238, 238, 238, 0.6), -3px -3px 5px rgba(238, 238, 238, 0.6);
+    -webkit-box-shadow: 3px 3px 5px rgba(238, 238, 238, 0.6), -3px -3px 5px rgba(238, 238, 238, 0.6);
+    border-radius: 10px;
+}
+
+.about-thumb img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-thumb .about-des {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.4);
+    overflow: hidden;
+    transition: height 450ms;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.about-thumb:hover .about-des {
+    color: #ffffff;
+    height: 100%;
+    background-color: #009FFD;
+    padding-top: 40%;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.about-thumb .about-des h3 {
+    color: #444;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+}
+
+.about-thumb .about-des h4 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #666;
+    padding-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.about-thumb:hover h3,
+.about-thumb:hover h4,
+.about-thumb:hover .social-icon li a {
+    color: #eee;
+}
+
+.social-icon {
+    padding: 0;
+    margin: 0;
+}
+
+.social-icon li {
+    list-style: none;
+    display: inline-block;
+}
+
+.social-icon li a {
+    border-radius: 100px;
+    color: #626262;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-right: 10px;
+}
+
+.social-icon li a:hover {
+    background: #111;
+    color: #ffffff;
+}
+
+/**************************************************/
+/***** Special style for the positions section *****/
+/**************************************************/
+
+.positions-section {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: black;
+    background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/*************************/
+/***** Button styles *****/
+/*************************/
+
+.btn {
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0;
+}
+
+.btn-default {
+    border: 1px solid #42DCA3;
+    color: #42DCA3;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #42DCA3;
+    outline: none;
+    color: black;
+    background-color: #42DCA3;
+}
+
+/****************************************/
+/***** Selection style for buttons ******/
+/****************************************/
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/*************************/
+/***** Footer style ******/
+/*************************/
+
+footer {
+    padding: 50px 0;
+}
+
+footer p {
+    font-size: 15px;
+    margin: 0;
+}
+
+/************************/
+/***** Image style ******/
+/************************/
+
+img.resize {
+    height: auto;
+    width: auto;
+    max-width: 80%;
+    padding: 20px 0px 60px;
+}
+
+/**********************************/
+/***** Image selection style ******/
+/**********************************/
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+/******************************/
+/***** Image descriptions *****/
+/******************************/
+
+p.imgPageTop {
+    display: block;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+p.imgPageDescription {
+    display: block;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 100;
+    text-align: justify;
+    letter-spacing: 0.4px;
+}
+
+p.relatedPublications {
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p.publicationAuthors {
+    margin: 0 0 0px;    
+    display: block;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 100;
+    text-align: justify;
+    letter-spacing: 0.4px;
+    font-family: sans-serif;
+}
+
+p.publicationTitle {
+    margin: 0 0 0px;    
+    display: block;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: justify;
+    letter-spacing: 0.4px;
+    font-family: sans-serif;
+}
+
+p.publicationRef {
+    margin: 0 0 0px;
+    display: block;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 100;
+    text-align: justify;
+    letter-spacing: 0.4px;
+    font-family: sans-serif;
+}
+
+/***************************/
+/***** Portfolio stuff *****/
+/***************************/
+
+#portfolio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background:black;
+}
+
+#portfolio h2 {
+    color: #010101;
+}
+
+#portfolio .project-wrap a {
+    background: #677789;
+    display: block;
+    border-radius: 10px;
+    color: #ffffff;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+#portfolio .project-wrap a img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+#portfolio .project-wrap a span, #portfolio .project-wrap a b {
+    -webkit-transition: all 0s;
+    transition: all 0s;
+}
+
+#portfolio .project-wrap a span.top {
+    padding: 15px 0px 10px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: block;
+}
+
+#portfolio .project-wrap a span.bottom {
+    padding: 0 10px 15px;
+    display: block;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+#portfolio .project-wrap a:focus {
+    text-decoration: none !important;
+    background: #009FFD;
+    box-shadow: 0px 0px 7px 1px #010101;
+}
+
+#portfolio .project-wrap a:hover {
+    text-decoration: none !important;
+    background: #009FFD;
+    box-shadow: 0px 0px 7px 1px #010101;
+}
+
+/***************************/
+/******* Modal stuff *******/
+/***************************/
+
+#myModal {
+    background-color: rgba(103,119,137,.7);
+    text-align:center;
+}
+
+modal-title {
+    text-align:center;
+    font-weight:bold;
+}
+
+@media (min-width: 768px) {
+    #myModal .modal-dialog {
+        webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        text-align:center;
+    }
+}
+
+#myModal .modal-header {
+    border-radius: 5px 5px 0 0;
+    background-color:#000;
+    text-align:center;
+}
+
+#myModal .modal-content {
+    background-color:#000;
+    border-radius: 0;
+    padding:10px;
+    box-shadow: none;
+    background-clip:inherit;
+    max-height:calc(100vh-200px);
+}
+
+#myModal .modal-footer {
+    background-color:#000;
+    border-radius: 0 0 5px 5px;
+    text-align:center;
+}
