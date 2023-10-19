@@ -173,24 +173,6 @@ a:focus {
     -o-background-size: cover;
 }
 
-/* .introvidcontainer {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .introvid {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  .LOGO {
-    height: 180px;
-    position: relative;
-    top: -200px;
-    right: 100px;
-
-  } */
-
   /* Create a container to hold both the video and the overlay image */
 .introvidcontainer {
     position: relative;
@@ -247,6 +229,30 @@ a:focus {
     .intro p {
         margin: 0 0 0px;
     }
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.column img {
+    max-width: 55%;
+    border-radius: 10px;
+    margin-bottom: 0.5cm;
+}
+
+.column p {
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /***********************************************/
