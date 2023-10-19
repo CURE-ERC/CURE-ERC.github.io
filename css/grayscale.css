@@ -231,29 +231,14 @@ a:focus {
     }
 }
 
-.column {
-    float: left;
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
-}
 
-.column img {
-    max-width: 55%;
+#laffitte {
+    max-width: 45%;
     border-radius: 10px;
     margin-bottom: 0.5cm;
 }
 
-.column p {
-    font-size: 22px;
-    line-height: 1.6;
-}
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 /***********************************************/
 /***** Special style for the about section *****/
