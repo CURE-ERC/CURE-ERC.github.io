@@ -253,6 +253,11 @@ a:focus {
     margin-bottom: 0.5cm;
 }
 
+#esb {
+    max-width: 55%;
+    border-radius: 10px;
+    margin-bottom: 0.5cm;
+}
 
 
 /***********************************************/
