@@ -33,3 +33,12 @@ $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
 });
 
+
+function toggleNews() {
+    const moreNews = document.getElementById("more-news");
+    const button = document.getElementById("toggle-btn");
+    const isOpen = moreNews.classList.contains("show");
+
+    moreNews.classList.toggle("show");
+    button.textContent = isOpen ? "Show More News ▼" : "Hide Older News ▲";
+}

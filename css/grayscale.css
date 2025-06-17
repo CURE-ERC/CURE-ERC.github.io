@@ -245,6 +245,19 @@ a:focus {
 /***** Special style for the news section *****/
 /***********************************************/
 
+
+#more-news {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 1.5s ease, opacity 1.5s ease;
+}
+
+#more-news.show {
+    max-height: 10000px; /* Set to a large enough value */
+    opacity: 1;
+}
+
 #latest img {
     max-width: 60%;
     height: auto;
