@@ -314,12 +314,27 @@
             <div class="row"> <!-- Start of Row 1 -->
 
                 <!-- Column 1 -->
-                <div class="col-sm-3">
+
+                <div class="col-sm-4">
+                    <!-- Img -->
+                    <div class="project-wrap">
+                        <a data-toggle="modal" href="publication_pages/meshmask.html" data-target="#myModal">
+                            <img src="imgs/meshmask_model.png" alt="" />
+                            <span class="top">Pre-Training AI models for faster simulations</span>
+                            <span class="bottom">Physics-Based Simulations with Masked Graph Neural Networks</span>
+                        </a>
+                    </div>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            </div>
+                        </div>
+                    </div> <!-- /.Img -->
 
                     <!-- Img -->
                     <div class="project-wrap">
-                        <a data-toggle="modal" href="pages/stent/stent.html" data-target="#myModal">
-                            <img src="imgs/stent.png" alt="" />
+                        <a data-toggle="modal" href="publication_pages/stent_drl.html" data-target="#myModal">
+                            <img src="imgs/stent_drl.png" alt="" />
                             <span class="top">Improving treatment</span>
                             <span class="bottom">Deep reinforcement learning for optimal flow-diverter design</span>
                         </a>
@@ -334,55 +349,11 @@
                 </div> <!-- /.Column 1 -->
 
                 <!-- Column 2 -->
-                <div class="col-sm-3">
+                <div class="col-sm-4">
 
                     <!-- Img -->
                     <div class="project-wrap">
-                        <a data-toggle="modal" href="pages/cow/cow.html" data-target="#myModal">
-                            <img src="imgs/cow.png" alt="" />
-                            <span class="top">Capturing brain haemodynamics at a larger scale</span>
-                            <span class="bottom">Impact assessment of the simulated domain extension in brain aneurysm
-                                CFD simulations</span>
-                        </a>
-                    </div>
-                    <div class="modal fade" id="myModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            </div>
-                        </div>
-                    </div> <!-- /.Img -->
-
-                </div> <!-- /.Column 2 -->
-
-                <!-- Column 3 -->
-                <div class="col-sm-3">
-
-                    <!-- Img -->
-                    <div class="project-wrap">
-                        <a data-toggle="modal" href="pages/AnXplore/AnXplore.html" data-target="#myModal">
-                            <img src="imgs/AnXplore.png" alt="" /> <!-- ratio is 0.9064 for the images -->
-                            <span class="top">Sharing new datasets</span>
-                            <span class="bottom">Fluid-structure interaction modelling relevance investigated in 101
-                                aneurysm cases</span>
-                        </a>
-                    </div>
-                    <div class="modal fade" id="myModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            </div>
-                        </div>
-                    </div> <!-- /.Img -->
-
-
-                </div> <!-- /.Column 3 -->
-
-                <!-- Column 4 -->
-                <div class="col-sm-3">
-
-                    <!-- Img -->
-                    <div class="project-wrap">
-                        <a data-toggle="modal" href="pages/stent_deployment/stent_deployment.html"
-                            data-target="#myModal">
+                        <a data-toggle="modal" href="publication_pages/stent_deployment.html" data-target="#myModal">
                             <img src="imgs/stent_deployment.png" alt="" /> <!-- ratio is 0.9064 for the images -->
                             <span class="top">Simulating haemodynamics inside stented vessels</span>
                             <span class="bottom">Virtual flow diverter deployment and embedding for haemodynamic
@@ -396,8 +367,45 @@
                         </div>
                     </div> <!-- /.Img -->
 
+                </div> <!-- /.Column 2 -->
 
-                </div> <!-- /.Column 4 -->
+                <!-- Column 3 -->
+                <div class="col-sm-4">
+
+                    <!-- Img -->
+                    <div class="project-wrap">
+                        <a data-toggle="modal" href="publication_pages/AnXplore.html" data-target="#myModal">
+                            <img src="imgs/AnXplore.png" alt="" /> <!-- ratio is 0.9064 for the images -->
+                            <span class="top">Sharing new datasets</span>
+                            <span class="bottom">Fluid-structure interaction modelling relevance investigated in 101
+                                aneurysm cases</span>
+                        </a>
+                    </div>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            </div>
+                        </div>
+                    </div> <!-- /.Img -->
+
+                    <!-- Img -->
+                    <div class="project-wrap">
+                        <a data-toggle="modal" href="publication_pages/cow.html" data-target="#myModal">
+                            <img src="imgs/cow.png" alt="" />
+                            <span class="top">Capturing brain haemodynamics at a larger scale</span>
+                            <span class="bottom">Impact assessment of the simulated domain extension in brain aneurysm
+                                CFD simulations</span>
+                        </a>
+                    </div>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            </div>
+                        </div>
+                    </div> <!-- /.Img -->
+
+                </div> <!-- /.Column 3 -->
+
             </div> <!-- /.Row 1 -->
         </div> <!-- /.Publications elements -->
     </section> <!-- /.Publications Section -->
@@ -419,6 +427,11 @@
                             data-caption="Cross-section cuts at the IA neck with the inscribed velocity magnitudes at diastole.">
                     </div>
                     <div class="gallery-item">
+                        <img src="imgs/masking-examples.png" alt="Description 2"
+                            data-caption="MeshMask model predictions for different physical dasasets: Cylinder, Bezier and 2D-Aneurysm. 
+                            We show (left) the masked mesh with hidden nodes in gray, (middle) the prediction from the AutoEncoder architecture, and (right) the ground truth prediction.">
+                    </div>
+                    <div class="gallery-item">
                         <img src="imgs/cow_wss_discrepancies.png" alt="Description 2"
                             data-caption="WSS distributions for the different CoW complexity levels at diastole (a) and peak systole (b).">
                     </div>
@@ -427,8 +440,7 @@
                             data-caption="Blood flow simulated inside a giant aneurysm.">
                     </div>
                     <div class="gallery-item">
-                        <img src="imgs/stent_virtual_deployment.jpg" alt="Description 3"
-                            data-caption="Virtual deployment of the 4.75 mm PED in a step-wise growing cylinder.
+                        <img src="imgs/stent_virtual_deployment.jpg" alt="Description 3" data-caption="Virtual deployment of the 4.75 mm PED in a step-wise growing cylinder.
                             Top: Deployed stent with colour-coded MCR values. 
                             Bottom: Comparison between the measured MCR values from Shapiro et al. and the numerically computed ones.
                             The value noted by * lays outside the valid range for the porosity computation.">
@@ -439,8 +451,11 @@
                             Plot of stent radius, including a preview of the vasculature with the implanted stent and red segmented wires.">
                     </div>
                     <div class="gallery-item">
-                        <img src="imgs/anxplore_construction.jpg" alt="Description 3"
-                            data-caption="AnXplore generation pipeline.
+                        <img src="imgs/meshmask_model.png" alt="Description 3"
+                            data-caption="MeshMask AutoEncoder architecture.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/anxplore_construction.jpg" alt="Description 3" data-caption="AnXplore generation pipeline.
                             (A) The bulge is extracted from the original IntrA (Yang et al., 2020) mesh.
                             (B) A PCA of the neck points is implemented and (C) the bulge is rotated/scaled to mount it on the toroidal artery.
                             After Nearest Neighbors nodes are connected, the surface is remeshed (D) to obtain a homogeneous mesh size.
@@ -451,19 +466,16 @@
                             data-caption="AnXplore transformation examples.">
                     </div>
                     <div class="gallery-item">
-                        <img src="imgs/anxplore_rigid_cfd.jpg" alt="Description 3"
-                            data-caption="Simulated haemodynamics for three different aneurysms.
+                        <img src="imgs/anxplore_rigid_cfd.jpg" alt="Description 3" data-caption="Simulated haemodynamics for three different aneurysms.
                             (A) Systolic velocity streamlines colour-coded with the vertical component 
                             (B) TAWSS distribution and (C) OSI distribution.">
                     </div>
                     <div class="gallery-item">
-                        <img src="imgs/anxplore_rigid_vs_compliant.jpg" alt="Description 3"
-                            data-caption="Evolution of haemodynamics moving from rigid-wall modelling to complete FSI simulations.
+                        <img src="imgs/anxplore_rigid_vs_compliant.jpg" alt="Description 3" data-caption="Evolution of haemodynamics moving from rigid-wall modelling to complete FSI simulations.
                             High OSI regions are flagged at the surface of the bulge.">
                     </div>
                     <div class="gallery-item">
-                        <img src="imgs/stent_mesh_giant_anev.jpg" alt="Description 3"
-                            data-caption="Left: Cut view of the computational mesh generated based on the in-vivo recordings.
+                        <img src="imgs/stent_mesh_giant_anev.jpg" alt="Description 3" data-caption="Left: Cut view of the computational mesh generated based on the in-vivo recordings.
                             The red circle shows a zoomed-in area with isotropic refinement around the wires and the unstructured boundary layers.
                             Right: Volume representation of the velocity at systole with the blent-in stent.">
                     </div>
