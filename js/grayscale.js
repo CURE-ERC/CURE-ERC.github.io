@@ -40,7 +40,7 @@ function toggleNews() {
     const isOpen = moreNews.classList.contains("show");
 
     moreNews.classList.toggle("show");
-    button.textContent = isOpen ? "Show More News ▼" : "Hide Older News ▲";
+    button.textContent = isOpen ? "▼ Show More News ▼" : "▲ Hide Older News ▲";
 }
 
 
