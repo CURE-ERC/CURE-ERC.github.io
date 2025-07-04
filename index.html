@@ -363,14 +363,14 @@
                 <!-- Column 3 -->
                 <div class="col-sm-4">
 
-                    <div class="project-wrap">
+                    <!-- <div class="project-wrap">
                         <a data-toggle="modal" href="publication_pages/pc-gnn.html" data-target="#myModal">
-                            <img src="imgs/pc_gnn_model.png" alt="" /> <!-- ratio is 0.9064 for the images -->
+                            <img src="imgs/pc_gnn_model.png" alt="" />
                             <span class="top">Accelerating haemodynamics simulations with AI</span>
                             <span class="bottom">Physically-constrained Graph Neural Networks for haemodynamics
                                 simulation inside aneurysms</span>
                         </a>
-                    </div>
+                    </div> -->
 
                     <div class="project-wrap">
                         <a data-toggle="modal" href="publication_pages/cow.html" data-target="#myModal">
@@ -451,6 +451,10 @@
                             (E) Lastly, volume meshes are generated.">
                     </div>
                     <div class="gallery-item">
+                        <img src="imgs/pc_gnn_model.png" alt="Description 3"
+                            data-caption="Physically-constrained GNN model architecture, with physical loss and inflow-informed node features.">
+                    </div>
+                    <div class="gallery-item">
                         <img src="imgs/anxplore_examples.jpg" alt="Description 3"
                             data-caption="AnXplore dataset transformation examples.">
                     </div>
@@ -468,6 +472,10 @@
                             (B) TAWSS distribution and (C) OSI distribution.">
                     </div>
                     <div class="gallery-item">
+                        <img src="imgs/pcgnn_predictions.png" alt="Description 3"
+                            data-caption="Predictions on AnXplore cases by the PC-GNN model.">
+                    </div>
+                    <div class="gallery-item">
                         <img src="imgs/anxplore_rigid_vs_compliant.jpg" alt="Description 3" data-caption="Evolution of haemodynamics moving from rigid-wall modelling to complete FSI simulations.
                             High OSI regions are flagged at the surface of the bulge.">
                     </div>
@@ -483,6 +491,10 @@
                     <div class="gallery-item">
                         <img src="imgs/segmentation_methods_velocity_streams.jpg" alt="Description 3"
                             data-caption="Comparison of the effect on velocity of segmentations produced by a convolutional neural network with different preprocessing methods.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/model_comp_pcgnn.png" alt="Description 3"
+                            data-caption="Model comparison after training, between MeshGraphNet and PC-GNN variations.">
                     </div>
                     <!-- Add more images as needed -->
                 </div>
