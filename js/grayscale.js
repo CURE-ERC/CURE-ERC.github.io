@@ -33,3 +33,43 @@ $('.navbar-collapse ul li a').click(function() {
     $(this).closest('.collapse').collapse('toggle');
 });
 
+
+// --- Gallery Modal Functionality ---
+document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("gallery-modal");
+    const modalImg = document.getElementById("gallery-modal-img");
+    const captionText = document.getElementById("gallery-caption");
+    const closeBtn = document.querySelector(".gallery-close");
+
+    document.querySelectorAll(".gallery-item img").forEach(img => {
+        img.addEventListener("click", function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.textContent = this.getAttribute("data-caption") || this.alt || "";
+        });
+    });
+
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+        modalImg.src = "";
+        captionText.textContent = "";
+    };
+
+    // Close modal on click outside image
+    modal.onclick = function(e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+            modalImg.src = "";
+            captionText.textContent = "";
+        }
+    };
+
+    // Close modal on ESC key
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape" && modal.style.display === "block") {
+            modal.style.display = "none";
+            modalImg.src = "";
+            captionText.textContent = "";
+        }
+    });
+});

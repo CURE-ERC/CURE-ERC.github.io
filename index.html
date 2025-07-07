@@ -63,7 +63,10 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                            <a class="page-scroll" href="#portfolio">Publications</a>
+                        <a class="page-scroll" href="#publications">Publications</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#gallery">Gallery</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#positions">Positions</a>
@@ -289,7 +292,7 @@
 
                         <!-- Img -->
                     <div class="project-wrap">
-                            <a data-toggle="modal" href="publication_pages/stent_drl.html" data-target="#myModal">
+                        <a data-toggle="modal" href="publication_pages/stent_drl.html" data-target="#myModal">
                                 <img src="imgs/stent_drl.png" alt=""/>
                             <span class="top">Improving treatment</span>
                             <span class="bottom">Deep reinforcement learning for optimal flow-diverter design</span>
@@ -325,10 +328,10 @@
 
                         <!-- Img -->
                     <div class="project-wrap">
-                            <a data-toggle="modal" href="publication_pages/pc-gnn.html" data-target="#myModal">
+                        <a data-toggle="modal" href="publication_pages/pc-gnn.html" data-target="#myModal">
                                 <img src="imgs/pc_gnn_model.png" alt=""/>
-                                <span class="top">Accelerating haemodynamics simulations with AI</span>
-                                <span class="bottom">Physically-constrained Graph Neural Networks for haemodynamics
+                            <span class="top">Accelerating haemodynamics simulations with AI</span>
+                            <span class="bottom">Physically-constrained Graph Neural Networks for haemodynamics
                                 simulation inside aneurysms</span>
                         </a>
                     </div>
@@ -385,6 +388,120 @@
         </div> <!-- /.Publications elements -->
 
     </section> <!-- /.Publications Section -->
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="text-center">
+        <div class="gallery-section">
+            <div class="container">
+                <h1>Gallery</h1>
+                <div class="gallery-grid">
+                    <!-- Example gallery items -->
+                    <div class="gallery-item">
+                        <img src="imgs/meshed_cow.webp" alt="Description 1"
+                            data-caption="Visualization of the CoW of a patient showing the linear isotropic refinement (left) and structured tetrahaedral boundary layers (right).">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/cow_velocity_discrepancies.png" alt="Description 2"
+                            data-caption="Cross-section cuts at the IA neck with the inscribed velocity magnitudes at diastole.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/blood_clot_3d_stented.gif" alt="Description 3"
+                            data-caption="Blood clot development in a stented 3D patient-specific aneurysm geometry.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/masking-examples.png" alt="Description 2"
+                            data-caption="MeshMask model predictions for different physical dasasets: Cylinder, Bezier and 2D-Aneurysm. 
+                            We show (left) the masked mesh with hidden nodes in gray, (middle) the prediction from the AutoEncoder architecture, and (right) the ground truth prediction.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/cow_wss_discrepancies.png" alt="Description 2"
+                            data-caption="WSS distributions for the different CoW complexity levels at diastole (a) and peak systole (b).">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/cure1.gif" alt="Description 2"
+                            data-caption="Blood flow simulated inside a giant aneurysm using Fluid Structure Interaction methods to simulate the artery wall movement.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/stent_virtual_deployment.jpg" alt="Description 3" data-caption="Virtual deployment of the 4.75 mm PED in a step-wise growing cylinder.
+                            Top: Deployed stent with colour-coded MCR values. 
+                            Bottom: Comparison between the measured MCR values from Shapiro et al. and the numerically computed ones.
+                            The value noted by * lays outside the valid range for the porosity computation.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/stent_deployement_experiment.jpg" alt="Description 3"
+                            data-caption="Comparison of measured and virtually predicted radii and angles.
+                            Plot of stent radius, including a preview of the vasculature with the implanted stent and red segmented wires.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/meshmask_model.png" alt="Description 3"
+                            data-caption="MeshMask AutoEncoder architecture.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/anxplore_construction.jpg" alt="Description 3" data-caption="AnXplore generation pipeline.
+                            (A) The bulge is extracted from the original IntrA (Yang et al., 2020) mesh.
+                            (B) A PCA of the neck points is implemented and (C) the bulge is rotated/scaled to mount it on the toroidal artery.
+                            After Nearest Neighbors nodes are connected, the surface is remeshed (D) to obtain a homogeneous mesh size.
+                            (E) Lastly, volume meshes are generated.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/pc_gnn_model.png" alt="Description 3"
+                            data-caption="Physically-constrained GNN model architecture, with physical loss and inflow-informed node features.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/anxplore_examples.jpg" alt="Description 3"
+                            data-caption="AnXplore dataset transformation examples.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/web_deployment_1.gif" alt="Description 3"
+                            data-caption="Intrasaccular flow disruptor numerical deployment.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/photos_montage_exp.jpg" alt="Description 3"
+                            data-caption="Experimental setup designed to study the impact of shear inversion on blood rheology.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/anxplore_rigid_cfd.jpg" alt="Description 3" data-caption="Simulated haemodynamics for three different aneurysms.
+                            (A) Systolic velocity streamlines colour-coded with the vertical component 
+                            (B) TAWSS distribution and (C) OSI distribution.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/pcgnn_predictions.png" alt="Description 3"
+                            data-caption="Predictions on AnXplore cases by the PC-GNN model.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/anxplore_rigid_vs_compliant.jpg" alt="Description 3" data-caption="Evolution of haemodynamics moving from rigid-wall modelling to complete FSI simulations.
+                            High OSI regions are flagged at the surface of the bulge.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/stent_mesh_giant_anev.jpg" alt="Description 3" data-caption="Left: Cut view of the computational mesh generated based on the in-vivo recordings.
+                            The red circle shows a zoomed-in area with isotropic refinement around the wires and the unstructured boundary layers.
+                            Right: Volume representation of the velocity at systole with the blent-in stent.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/web_streamlines.gif" alt="Description 3"
+                            data-caption="Velocity streamlines in an aneurysm before (left) and after (right) intrasaccular flow disruptor implantation.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/segmentation_methods_velocity_streams.jpg" alt="Description 3"
+                            data-caption="Comparison of the effect on velocity of segmentations produced by a convolutional neural network with different preprocessing methods.">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="imgs/model_comp_pcgnn.png" alt="Description 3"
+                            data-caption="Model comparison after training, between MeshGraphNet and PC-GNN variations.">
+                    </div>
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+        </div>
+        <!-- Modal for image popup -->
+        <div id="gallery-modal" class="gallery-modal">
+            <span class="gallery-close">&times;</span>
+            <img class="gallery-modal-content" id="gallery-modal-img">
+            <div id="gallery-caption"></div>
+        </div>
+    </section> <!-- /.Gallery Section -->
+
 
     <!-- Positions Section -->
     <section id="positions" class="text-center">
