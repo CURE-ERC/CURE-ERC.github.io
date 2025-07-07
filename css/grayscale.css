@@ -241,6 +241,19 @@ a:focus {
 }
 
 
+/***********************************************/
+/***** Special style for the news section *****/
+/***********************************************/
+
+#latest img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+    max-height: 400px; /* Optional: keeps height under control too */
+}
+
 #laffitte {
     max-width: 40%;
     border-radius: 10px;
@@ -528,7 +541,7 @@ p.publicationRef {
 }
 
 /***************************/
-/***** Portfolio stuff *****/
+/***** Publications stuff *****/
 /***************************/
 
 #portfolio {
