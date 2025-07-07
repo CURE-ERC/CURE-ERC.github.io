@@ -528,21 +528,21 @@ p.publicationRef {
 }
 
 /***************************/
-/***** Publications stuff *****/
+/***** Portfolio stuff *****/
 /***************************/
 
-#publications {
+#portfolio {
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
     background:black;
 }
 
-#publications h2 {
+#portfolio h2 {
     color: #010101;
 }
 
-#publications .project-wrap a {
+#portfolio .project-wrap a {
     background: #677789;
     display: block;
     border-radius: 10px;
@@ -551,17 +551,17 @@ p.publicationRef {
     margin: 20px auto;
 }
 
-#publications .project-wrap a img {
+#portfolio .project-wrap a img {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
 
-#publications .project-wrap a span, #publications .project-wrap a b {
+#portfolio .project-wrap a span, #portfolio .project-wrap a b {
     -webkit-transition: all 0s;
     transition: all 0s;
 }
 
-#publications .project-wrap a span.top {
+#portfolio .project-wrap a span.top {
     padding: 15px 0px 10px;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -570,7 +570,7 @@ p.publicationRef {
     display: block;
 }
 
-#publications .project-wrap a span.bottom {
+#portfolio .project-wrap a span.bottom {
     padding: 0 10px 15px;
     display: block;
     font-size: 15px;
@@ -579,13 +579,13 @@ p.publicationRef {
     font-family: sans-serif;
 }
 
-#publications .project-wrap a:focus {
+#portfolio .project-wrap a:focus {
     text-decoration: none !important;
     background: #009FFD;
     box-shadow: 0px 0px 7px 1px #010101;
 }
 
-#publications .project-wrap a:hover {
+#portfolio .project-wrap a:hover {
     text-decoration: none !important;
     background: #009FFD;
     box-shadow: 0px 0px 7px 1px #010101;
