@@ -241,32 +241,6 @@ a:focus {
 }
 
 
-/***********************************************/
-/***** Special style for the news section *****/
-/***********************************************/
-
-
-#more-news {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 1.5s ease, opacity 1.5s ease;
-}
-
-#more-news.show {
-    max-height: 10000px; /* Set to a large enough value */
-    opacity: 1;
-}
-
-#latest img {
-    max-width: 60%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-
-    max-height: 400px; /* Optional: keeps height under control too */
-}
-
 #laffitte {
     max-width: 40%;
     border-radius: 10px;
@@ -440,38 +414,6 @@ a:focus {
     background-color: #42DCA3;
 }
 
-.toggle-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background-color: #f8f9fa;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px 16px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-    user-select: none;
-}
-
-.toggle-button:hover {
-    background-color: #e2e6ea;
-}
-
-.toggle-button:active {
-    transform: scale(0.98);
-}
-
-.toggle-icon {
-    transition: transform 0.3s ease;
-}
-
-.rotated {
-    transform: rotate(180deg);
-}
-
 /****************************************/
 /***** Selection style for buttons ******/
 /****************************************/
@@ -586,21 +528,21 @@ p.publicationRef {
 }
 
 /***************************/
-/***** Publications stuff *****/
+/***** Portfolio stuff *****/
 /***************************/
 
-#publications {
+#portfolio {
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
     background:black;
 }
 
-#publications h2 {
+#portfolio h2 {
     color: #010101;
 }
 
-#publications .project-wrap a {
+#portfolio .project-wrap a {
     background: #677789;
     display: block;
     border-radius: 10px;
@@ -609,17 +551,17 @@ p.publicationRef {
     margin: 20px auto;
 }
 
-#publications .project-wrap a img {
+#portfolio .project-wrap a img {
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
 
-#publications .project-wrap a span, #publications .project-wrap a b {
+#portfolio .project-wrap a span, #portfolio .project-wrap a b {
     -webkit-transition: all 0s;
     transition: all 0s;
 }
 
-#publications .project-wrap a span.top {
+#portfolio .project-wrap a span.top {
     padding: 15px 0px 10px;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -628,7 +570,7 @@ p.publicationRef {
     display: block;
 }
 
-#publications .project-wrap a span.bottom {
+#portfolio .project-wrap a span.bottom {
     padding: 0 10px 15px;
     display: block;
     font-size: 15px;
@@ -637,13 +579,13 @@ p.publicationRef {
     font-family: sans-serif;
 }
 
-#publications .project-wrap a:focus {
+#portfolio .project-wrap a:focus {
     text-decoration: none !important;
     background: #009FFD;
     box-shadow: 0px 0px 7px 1px #010101;
 }
 
-#publications .project-wrap a:hover {
+#portfolio .project-wrap a:hover {
     text-decoration: none !important;
     background: #009FFD;
     box-shadow: 0px 0px 7px 1px #010101;
@@ -690,112 +632,4 @@ modal-title {
     background-color:#000;
     border-radius: 0 0 5px 5px;
     text-align:center;
-}
-
-
-/***************************/
-/******* Gallery stuff *******/
-/***************************/
-
-
-/* --- Gallery Section Styles --- */
-.gallery-section {
-    width: 100%;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background: #111;
-    color: #fff;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 6px;
-    margin-top: 40px;
-}
-
-.gallery-item {
-    overflow: visible;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-    cursor: pointer;
-    transition: transform 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
-    background: #222;
-    position: relative;
-    aspect-ratio: 1 / 1; /* makes all items square and responsive */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.gallery-item:hover {
-    transform: scale(1.12);
-    box-shadow: 0 12px 32px rgba(0,0,0,0.6);
-    z-index: 10;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* if want to show the whole image, use 'contain' */
-    display: block;
-    border-radius: 10px;
-    background: #fff;
-}
-
-
-/* Modal Styles */
-.gallery-modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    padding-top: 60px;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-    overflow: auto;
-    background: rgba(0,0,0,0.65);
-    text-align: center;
-}
-
-.gallery-modal-content {
-    margin: auto;
-    display: block;
-    max-width: 90vw;
-    max-height: 70vh;
-    border-radius: 10px;
-    box-shadow: 0 2px 24px #000;
-    animation: gallery-zoom 0.3s;
-}
-
-@keyframes gallery-zoom {
-    from {transform: scale(0.7);}
-    to {transform: scale(1);}
-}
-
-.gallery-close {
-    position: absolute;
-    top: 30px;
-    right: 50px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 10001;
-    transition: color 0.2s;
-}
-.gallery-close:hover { color: #42DCA3; }
-
-#gallery-caption {
-    margin: 20px auto 0 auto;
-    color: #eee;
-    font-size: 20px;
-    max-width: 80vw;
-    text-shadow: 0 2px 8px #000;
-}
-
-/* Responsive modal image */
-@media (max-width: 600px) {
-    .gallery-modal-content { max-width: 98vw; max-height: 50vh; }
-    .gallery-close { right: 20px; top: 10px; font-size: 32px; }
-    #gallery-caption { font-size: 16px; }
 }
