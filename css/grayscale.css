@@ -245,6 +245,19 @@ a:focus {
 /***** Special style for the news section *****/
 /***********************************************/
 
+
+#more-news {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 1.5s ease, opacity 1.5s ease;
+}
+
+#more-news.show {
+    max-height: 10000px; /* Set to a large enough value */
+    opacity: 1;
+}
+
 #latest img {
     max-width: 60%;
     height: auto;
@@ -425,6 +438,38 @@ a:focus {
     outline: none;
     color: black;
     background-color: #42DCA3;
+}
+
+.toggle-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    user-select: none;
+}
+
+.toggle-button:hover {
+    background-color: #e2e6ea;
+}
+
+.toggle-button:active {
+    transform: scale(0.98);
+}
+
+.toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.rotated {
+    transform: rotate(180deg);
 }
 
 /****************************************/

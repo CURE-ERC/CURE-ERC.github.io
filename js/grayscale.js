@@ -34,6 +34,16 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 
+function toggleNews() {
+    const moreNews = document.getElementById("more-news");
+    const button = document.getElementById("toggle-btn");
+    const isOpen = moreNews.classList.contains("show");
+
+    moreNews.classList.toggle("show");
+    button.textContent = isOpen ? "▼ Show More News ▼" : "▲ Hide Older News ▲";
+}
+
+
 // --- Gallery Modal Functionality ---
 document.addEventListener("DOMContentLoaded", function() {
     const modal = document.getElementById("gallery-modal");

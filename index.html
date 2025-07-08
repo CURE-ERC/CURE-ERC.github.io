@@ -100,24 +100,34 @@
                     <br>
                     <h1>Latest News</h1>
                         <h3> Mines Paris Research Day 2025 </h3>
-                        <img id="researchday" src="imgs/mines_researchday_2025.jpeg" alt="Elie & M.Ferracci">
-                        <p>
-                            During the <a href=https://researchday.minesparis.psl.eu> Mines Paris Research Day 2025</a>, Pr.
-                            Hachem presented the team's work to the French Minister for Energy and Industry, <b>Marc
-                                Ferracci</b>.
-                        </p>
+                    <img id="researchday" src="imgs/mines_researchday_2025.jpeg" alt="Elie & M.Ferracci">
+                    <p>
+                        During the <a href=https://researchday.minesparis.psl.eu> Mines Paris Research Day 2025</a>, Pr.
+                        Hachem presented the team's work to the French Minister for Energy and Industry, <b>Marc
+                            Ferracci</b>.
+                    </p>
 
-                        <h3> ICLR 2025 Publication</h3>
-                        <img id="iclr_t" src="imgs/meshmask_title.png" alt="meshmask_title">
-                        <img id="iclr" src="imgs/meshmask.png" alt="meshmask">
-                        <p>We are thrilled to announce that our paper
-                            <a href="https://arxiv.org/abs/2501.08738">MeshMask: Physics-Based Simulations with Masked
-                                Graph
-                                Neural Networks</a>
-                            has been accepted into ICLR 2025! See the <b>Publications</b> section for more details on
-                            this
-                            paper.
-                        </p>
+                    <h3> ICLR 2025 Publication</h3>
+                    <img id="iclr_t" src="imgs/meshmask_title.png" alt="meshmask_title">
+                    <img id="iclr" src="imgs/meshmask.png" alt="meshmask">
+                    <p>We are thrilled to announce that our paper
+                        <a href="https://arxiv.org/abs/2501.08738">MeshMask: Physics-Based Simulations with Masked
+                            Graph
+                            Neural Networks</a>
+                        has been accepted into ICLR 2025! See the <b>Publications</b> section for more details on
+                        this
+                        paper.
+                    </p>
+
+                    <!-- Toggle Button -->
+                    <button class="toggle-button" id="toggle-btn" onclick="toggleNews()">
+                        <span class="toggle-icon" id="toggle-icon">▼</span>
+                        <span id="toggle-text">Show More News</span>
+                        <span class="toggle-icon" id="toggle-icon">▼</span>
+                    </button>
+
+                    <!-- Smooth Collapsible Older News -->
+                    <div id="more-news">
 
                         <h3> AI Action Summit 2025 </h3>
                         <img id="ministre" src="imgs/ministre.jpg" alt="Elie & M.Baptiste">
@@ -156,7 +166,8 @@
                             Elie Hachem delivered a seminar about the CURE project.
                             Pablo Jeken-Rico and Aurèle Goetz, two of his PhD students, are staying there a month for
                             collaborating with the team on exciting new research questions. More info soon!
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -303,7 +314,7 @@
     </section>
 
     <!-- Publications Section -->
-        <section id="portfolio" class="container-fluid text-center">
+    <section id="portfolio" class="container-fluid text-center">
         <div class="container">
 
             <!-- Title -->
@@ -318,7 +329,7 @@
 
                     <!-- Img -->
                     <div class="project-wrap">
-                            <a data-toggle="modal" href="publication_pages/meshmask.html" data-target="#myModal">
+                        <a data-toggle="modal" href="publication_pages/meshmask.html" data-target="#myModal">
                                 <img src="imgs/meshmask_model.png" alt=""/>
                             <span class="top">Pre-Training AI models for faster simulations</span>
                             <span class="bottom">Physics-Based Simulations with Masked Graph Neural Networks</span>
