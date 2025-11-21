@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div class="modal-body">
+    <h1>Graph Transformer, a novel GNN architecture for mesh-based simulations</h1>
+    <!-- <h2>A simple shape for a functional FSI benchmark</h2> -->
+    <p> Simulating physics using Graph Neural Networks (GNNs) is predominantly driven by message-passing architectures,
+      which face challenges in scaling and efficiency, particularly in handling large, complex meshes. These
+      architectures have inspired numerous enhancements, including multigrid approaches and K-hop aggregation (using
+      neighbours of distance K), yet they often introduce significant complexity and suffer from limited in-depth
+      investigations. In response to these challenges, we propose a novel Graph Transformer architecture that leverages
+      the adjacency matrix as an attention mask. The proposed approach incorporates innovative augmentations, including
+      Dilated Sliding Windows and Global Attention, to extend receptive fields without sacrificing computational
+      efficiency. Through extensive experimentation, we evaluate model size, adjacency matrix augmentations, positional
+      encoding and K-hop configurations using challenging 3D computational fluid dynamics (CFD) datasets. We also
+      train over 60 models to find a scaling law between training FLOPs and parameters. The introduced models
+      demonstrate remarkable scalability, performing on meshes with up to 300k nodes and 3 million edges. Notably, the
+      smallest model achieves parity with MeshGraphNet while being 7 times faster and 6 times smaller. The largest
+      model surpasses the previous state-of-the-art by 38.8% on average and outperforms MeshGraphNet by 52% on the
+      all-rollout RMSE, while having a similar training speed. Code and datasets are available. 
+    </p>
+      <a
+        href="https://www.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1433811/full">link
+        to publication</a>
+      <a href="https://github.com/aurelegoetz/AnXplore">link to the dataset</a>
+      <!-- <h2>Comparing haemodynamics simulated with compliant and rigid walls for the entire dataset</h2> -->
+      <!-- <p>work in progress...</p> -->
+
+  </div> <!-- /.modal-body -->
+</body>
+
+</html>
